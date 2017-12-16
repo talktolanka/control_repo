@@ -1,5 +1,6 @@
-node default{
-file{'/root/README':
- ensure => file,
+package{ 'httpd':
+ ensure => installed,    
 }
+service{ 'httpd':
+ensure => running,
 }
